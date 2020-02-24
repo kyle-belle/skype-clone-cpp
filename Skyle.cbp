@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Skyle" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Skyle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Skyle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="vendor" />
+		</Compiler>
+		<Linker>
+			<Add library="C:/Users/kyleb/Downloads/glew-2.1.0-win32/glew-2.1.0/lib/Release/Win32/glew32s.lib" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libgdi32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libopengl32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwsock32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libvfw32.a" />
+		</Linker>
+		<Unit filename="Network/network.cpp" />
+		<Unit filename="Network/network.h" />
+		<Unit filename="Platform/Windows/window.cpp" />
+		<Unit filename="Platform/Windows/window.h" />
+		<Unit filename="Shaders/shaders.h" />
+		<Unit filename="functions/opengl/opengl_functions.cpp" />
+		<Unit filename="functions/opengl/opengl_functions.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="vendor/GL/glew.h" />
+		<Unit filename="vendor/STB/stb_image.cpp" />
+		<Unit filename="vendor/STB/stb_image.h" />
+		<Unit filename="window.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
